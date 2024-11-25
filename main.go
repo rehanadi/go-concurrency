@@ -9,5 +9,6 @@ func main() {
 	// r.Release2()
 	// r.Release3()
 	// r.Release4()
-	r.Release5()
+	// r.Release5()
+	r.Release6()
 }
