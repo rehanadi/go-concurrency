@@ -3,7 +3,7 @@ package releases
 import "fmt"
 
 func Release6() {
-	fmt.Println("=== Release 6 ===")
+	fmt.Printf("\n\n=== Release 6 ===\n")
 
 	// 6.1. Implement a scenario where you can pass errors between goroutines using channels. For example, when trying to send a number greater than 20 to the channels in Release 5, send an error to an error channel.
 	// 6.2. Handle this error in the main function by printing it out.

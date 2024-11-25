@@ -7,7 +7,7 @@ import (
 
 func Release4() {
 	// 4.1. Modify the channel in Task 3 to have a buffer of size 5.
-	fmt.Println("=== Release 4 ===")
+	fmt.Printf("\n\n=== Release 4 ===\n")
 
 	ch := make(chan int, 5)
 

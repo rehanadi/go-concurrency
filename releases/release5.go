@@ -3,7 +3,7 @@ package releases
 import "fmt"
 
 func Release5() {
-	fmt.Println("=== Release 5 ===")
+	fmt.Printf("\n\n=== Release 5 ===\n")
 
 	// 5.1. Create two channels: one for sending even numbers and another for sending odd numbers from 1 to 20.
 	even := make(chan int)

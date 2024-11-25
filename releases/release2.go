@@ -10,7 +10,7 @@ import (
 func Release2() {
 	// 2.1. Recognize the problem when the main function doesn't wait for the goroutines to finish.
 	// 2.2. Use the sync.WaitGroup to make sure your main function waits for the goroutines to complete before exiting.
-	fmt.Println("=== Release 2 ===")
+	fmt.Printf("\n\n=== Release 2 ===\n")
 
 	var wg sync.WaitGroup
 	wg.Add(2)

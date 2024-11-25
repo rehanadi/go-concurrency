@@ -7,7 +7,7 @@ import (
 
 func Release3() {
 	// 3.3. Use goroutines to concurrently run both functions and demonstrate communication between them using the channel.
-	fmt.Println("=== Release 3 ===")
+	fmt.Printf("\n\n=== Release 3 ===\n")
 
 	ch := make(chan int)
 
