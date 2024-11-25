@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	r.Release1()
-	r.Release2()
+	// r.Release1()
+	// r.Release2()
+	r.Release3()
 }
