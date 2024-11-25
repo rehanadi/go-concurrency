@@ -6,4 +6,5 @@ import (
 
 func main() {
 	r.Release1()
+	r.Release2()
 }

@@ -2,17 +2,28 @@ package releases
 
 import (
 	"fmt"
-	"time"
+	"sync"
 
 	h "go-concurrency/helpers"
 )
 
 func Release2() {
-	// 1.3. Use goroutines to concurrently run both functions.
+	// 2.1. Recognize the problem when the main function doesn't wait for the goroutines to finish.
+	// 2.2. Use the sync.WaitGroup to make sure your main function waits for the goroutines to complete before exiting.
 	fmt.Println("=== Release 2 ===")
 
-	go h.PrintNumbers()
-	go h.PrintLetters()
+	var wg sync.WaitGroup
+	wg.Add(2)
 
-	time.Sleep(5 * time.Second)
+	go func() {
+		defer wg.Done()
+		h.PrintNumbers()
+	}()
+
+	go func() {
+		defer wg.Done()
+		h.PrintLetters()
+	}()
+
+	wg.Wait()
 }
