@@ -7,9 +7,9 @@ import (
 	h "go-concurrency/helpers"
 )
 
-func Release1() {
+func Release2() {
 	// 1.3. Use goroutines to concurrently run both functions.
-	fmt.Println("=== Release 1 ===")
+	fmt.Println("=== Release 2 ===")
 
 	go h.PrintNumbers()
 	go h.PrintLetters()
