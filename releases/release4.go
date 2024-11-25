@@ -18,5 +18,6 @@ func Release4() {
 	// 4.2. Discuss or note down the behavior difference when using a buffered channel versus an unbuffered one.
 	/*
 		When using a buffered channel, the producer can send multiple values to the channel without blocking, as long as the buffer is not full.
+		When using an unbuffered channel, the producer will block until the consumer is ready to receive the value.
 	*/
 }
